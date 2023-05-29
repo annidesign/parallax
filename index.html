@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>parallax</title>
+</head>
+<body>
+            <section class="container-fluid">
+                <div class="keyart" id="parallax">
+                    <div class="keyart_layer parallax" id="keyart0" data-speed="2" style="transform: translate3d(0px, -13.333333740234375px, 0px)"></div>
+                    <div class="keyart_layer parallax" id="keyart1" data-speed="5" style="transform: translate3d(0px, -33.333334350585936px, 0px)"></div>
+                    <div class="keyart_layer parallax" id="keyart2" data-speed="11" style="transform: translate3d(0px, -73.33333557128907px, 0px)"></div>
+                    <div class="keyart_layer parallax" id="keyart3" data-speed="16" style="transform: translate3d(0px, -106.666669921875px, 0px)"></div>
+                    <div class="keyart_layer parallax" id="keyart4" data-speed="26" style="transform: translate3d(0px, -173.33333862304687px, 0px)"></div>
+                    <div class="keyart_layer parallax" id="keyart5" data-speed="36" style="transform: translate3d(0px, -200.00000732421876px, 0px)"></div>
+                    <div class="keyart_layer parallax" id="keyart6" data-speed="49" style="transform: translate3d(0px, -240.6666766357422px, 0px)"></div>
+                    <div class="keyart_layer parallax" id="keyart7" data-speed="69" style="transform: translate3d(0px, -260.6666766357422px, 0px)" ></div>
+
+                </div> <!-- //parallax -->
+             </section> <!-- // container-fuild -->
+
+             <!-- script for parallax -->
+            <script>
+                window.addEventListener('scroll', () => {
+              let parent =  document.getElementById('parallax');
+              let children = parent.getElementsByTagName('div');
+              for(let i = 0; i < children.length; i++) {
+                children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+              }
+            }, false)
+            </script>
+</body>
+</html>

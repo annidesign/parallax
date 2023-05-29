@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>parallax</title>
+    <style>
+        #parallax-container {
+  display: block;
+  height: 1000px;
+}
+
+#parallax-container div {
+  position: fixed;
+  top: 0;
+  background-position: top center !important;
+  transform: translateY(0px) !important;
+  height: 1000px;
+  width: 100%;
+  background-repeat: no-repeat;
+   
+}
+
+    </style>
+</head>
+<body>
+<div id="parallax-container">
+  <div style="background: url(C:/Users/Admin/Downloads/parallax/images/00.png);"></div>
+  <div style="background: url(C:/Users/Admin/Downloads/parallax/images/07.png);"></div>
+  <div style="background: url(C:/Users/Admin/Downloads/parallax/images/06.png);"></div>
+  <div style="background: url(C:/Users/Admin/Downloads/parallax/images/05.png);"></div>
+  <div style="background: url(C:/Users/Admin/Downloads/parallax/images/04.png);"></div>
+  <div style="background: url(C:/Users/Admin/Downloads/parallax/images/03.png);"></div>
+  <div style="background: url(C:/Users/Admin/Downloads/parallax/images/02.png);"></div>
+  <div style="background: url(C:/Users/Admin/Downloads/parallax/images/01.png);"></div>
+</div>
+
+<script>
+    window.addEventListener('scroll', () => {
+  let parent =  document.getElementById('parallax-container');
+  let children = parent.getElementsByTagName('div');
+  for(let i = 0; i < children.length; i++) {
+    children[i].style.transform = 'translateY(-' + (window.pageYOffset * i / children.length) + 'px)';
+  }
+}, false)
+</script>
+</body>
+</html>

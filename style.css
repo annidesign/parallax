@@ -1,0 +1,51 @@
+#parallax{
+    display: block;
+}
+.keyart_layer.parallax {
+    position: fixed;
+}
+.keyart {
+    position: relative;
+    z-index: 10;
+}
+
+.keyart_layer {
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    /* transform: translateY(0px) !important; */ 
+}
+.keyart, .keyart_layer {
+    height: 1000px;
+}
+
+#keyart0{
+    background-image: url('C:/Users/Admin/Downloads/parallax/images/00.png');
+
+}
+#keyart1{
+    background-image: url('C:/Users/Admin/Downloads/parallax/images/07.png');
+}
+#keyart2{
+    background-image: url('C:/Users/Admin/Downloads/parallax/images/06.png');
+}
+#keyart3{
+    background-image: url('C:/Users/Admin/Downloads/parallax/images/05.png');
+}
+#keyart4{
+    background-image: url('C:/Users/Admin/Downloads/parallax/images/04.png');
+}
+#keyart5{
+    background-image: url('C:/Users/Admin/Downloads/parallax/images/03.png');
+}
+
+#keyart6{
+    background-image: url('C:/Users/Admin/Downloads/parallax/images/02.png');
+}
+#keyart7{
+    background-image: url('C:/Users/Admin/Downloads/parallax/images/01.png');
+}
