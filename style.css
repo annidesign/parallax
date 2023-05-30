@@ -24,28 +24,28 @@
 }
 
 #keyart0{
-    background-image: url('C:/Users/Admin/Downloads/parallax/images/00.png');
+    background-image: url('../parallax/images/00.png');
 
 }
 #keyart1{
-    background-image: url('C:/Users/Admin/Downloads/parallax/images/07.png');
+    background-image: url('../parallax/images/07.png');
 }
 #keyart2{
-    background-image: url('C:/Users/Admin/Downloads/parallax/images/06.png');
+    background-image: url('../parallax/images/06.png');
 }
 #keyart3{
-    background-image: url('C:/Users/Admin/Downloads/parallax/images/05.png');
+    background-image: url('../parallax/images/05.png');
 }
 #keyart4{
-    background-image: url('C:/Users/Admin/Downloads/parallax/images/04.png');
+    background-image: url('../parallax/images/04.png');
 }
 #keyart5{
-    background-image: url('C:/Users/Admin/Downloads/parallax/images/03.png');
+    background-image: url('../parallax/images/03.png');
 }
 
 #keyart6{
-    background-image: url('C:/Users/Admin/Downloads/parallax/images/02.png');
+    background-image: url('../parallax/images/02.png');
 }
 #keyart7{
-    background-image: url('C:/Users/Admin/Downloads/parallax/images/01.png');
+    background-image: url('../parallax/images/01.png');
 }
